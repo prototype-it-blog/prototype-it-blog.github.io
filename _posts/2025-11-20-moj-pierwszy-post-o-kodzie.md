@@ -21,3 +21,5 @@ def powitanie(imie):
     return f"Cześć, {imie}! Twój blog techniczny działa."
 
 print(powitanie("Świecie"))
+'''
+
