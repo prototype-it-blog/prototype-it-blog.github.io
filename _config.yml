@@ -1,0 +1,23 @@
+# Ustawienia strony
+title: Twój Techniczny Blog
+email: Twoj@email.com
+description: >- # Opis, który pojawi się w meta tagach i na stronie głównej
+  Blog o programowaniu i technologii. Tutaj znajdziesz przykłady kodu i tutoriale.
+baseurl: "" # Jeśli używasz repozytorium "username.github.io", pozostaw puste
+url: "https://prototype-it-blog.github.io" # Zmień na swój adres
+
+# Ustawienia budowania
+markdown: kramdown
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+# Zewnętrzny motyw (najlepsza opcja na początek)
+remote_theme: jekyll/minima
+
+# Ustawienia podświetlania składni (Bardzo ważne dla kodu!)
+kramdown:
+  syntax_highlighter_opts:
+    block:
+      css: class
