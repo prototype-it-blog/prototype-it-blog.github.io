@@ -5,21 +5,52 @@ date: 2025-11-20 00:00:00 +0100
 categories: [programowanie, jekyll]
 tags: [markdown, code, tutorial]
 ---
+layout: post title: "🚀 Stwórz Swój Techniczny Blog w 1 Minutę! (GitHub Pages + Jekyll)" date: 2025-11-21 00:00:00 +0100 categories: [tutorial, github, jekyll] tags: [blogowanie, programowanie, github-pages, szybki-start]
 
-## Wstęp
+Uruchom własnego, darmowego bloga technicznego w mniej niż minutę, wykorzystując GitHub Pages i Jekyll — idealne rozwiązanie do prezentowania kodu!
 
-Ten post jest testem podświetlania składni. W Jekyllu używamy trzech backticków (trzech odwróconych apostrofów) i określenia języka, aby otoczyć nasz kod. To jest najlepsza praktyka do pokazywania kodu!
+Krok 1: Repozytorium
 
-### Przykład w Pythonie
+Zaloguj się na GitHub.
+Utwórz nowe, Publiczne repozytorium o nazwie: username.github.io.
+Adres URL: Twoja strona będzie dostępna pod adresem: https://username.github.io.
 
-Poniżej znajduje się blok kodu z jasno określonym językiem `python`.
+Krok 2: Konfiguracja (_config.yml)
+
+W głównym katalogu utwórz plik _config.yml z minimalną konfiguracją i włączonym podświetlaniem składni (Syntax Highlighting):
+
+```yaml
+
+Ustawienia Podstawowe
+
+title: Mój Blog description: Blog techniczny na GitHub Pages. url: "https://TWOJA_NAZWA.github.io"
+
+Ustawienia Jekyll
+
+remote_theme: jekyll/minima markdown: kramdown
+
+Włącz podświetlanie kodu
+
+kramdown: syntax_highlighter_opts: block: css: class ``` Zatwierdź (Commit) ten plik.
+
+Krok 3: Dodanie Posta
+
+Utwórz katalog _posts.
+Wewnątrz dodaj plik RRRR-MM-DD-witaj-swiecie-kodowania.md.
+Wklej do niego szablon posta z sekcją Front Matter i blokami kodu:
+
+```markdown
+
+layout: post title: "Witaj Świecie Kodowania!" date: 2025-11-21 00:00:00 +0100 categories: [test, start]
+
+Pierwszy post! Oto przykład kodu z automatycznym podświetlaniem składni:
 
 ```python
-# Program, który mówi "Cześć"
-def powitanie(imie):
-    """Zwraca spersonalizowane powitanie."""
-    return f"Cześć, {imie}! Twój blog techniczny działa."
 
-print(powitanie("Świecie"))
-'''
+Prosty przykład Pythona
 
+def hello_world(): print("Gratulacje, Twój blog działa!") hello_world() ``` ```
+
+Krok 4: Opublikowanie
+
+Zatwierdź wszystkie zmiany. GitHub Pages automatycznie zbuduje Twoją stronę. Odwiedź adres https://username.github.io w ciągu około 60 sekund. Gotowe!
